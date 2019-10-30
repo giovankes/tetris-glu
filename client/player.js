@@ -100,7 +100,7 @@ class Player
         this.pos.x = (this.arena.matrix[0].length / 2 | 0) -
                      (this.matrix[0].length / 2 | 0);
         if (this.arena.collide(this)) {
-            this.arena.clear();
+             this.arena.clear();
             this.score = 0;
             this.events.emit('score', this.score);
         }
